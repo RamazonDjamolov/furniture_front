@@ -10,6 +10,10 @@
    outline: none;
 
 }
+del {
+   text-decoration: line-through;
+ }
+ 
 
 /* navbar top */
 
@@ -31,7 +35,7 @@
        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
        color: #fff;
        margin: 10px;
-       border-radius: 50%;
+       border-radius: 7px;
    }
 
    .instagram:hover {
@@ -192,6 +196,211 @@
 }
 
 
+.block-main{
+   display: flex;
+   .filter-left{
+      width: 25%;
+      background-color: #d6249f;
+   }
 
+   .container{
+
+   }
+
+}
+
+/* start body */
+
+.main-cart{
+   border-radius: 7px;
+   width: 18rem;
+   height: 350px;
+   border: none;
+   padding: 10px;
+   transition: transform 0.5s ease;
+   .img-cart{
+      width: 100%;
+      img{
+         width: 100%;
+
+         
+      }
+   }
+
+   .price{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      p{
+         color:red;
+      }
+      del{
+         color: rgb(122, 122, 122);
+      }
+      i{
+         color:green;
+      }
+   }
+
+   .form{
+      display: none;
+   }
+
+}
+    
+.main-cart:hover{
+   transform: scale(1.1);
+   border: none;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+
+
+   .form{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      .add-tocart{
+         width: 100%;
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: #404040;
+         color: #fff;
+         text-decoration: none;
+         border-radius: 0px;
+         border: none;
+         cursor: pointer;
+         text-align: center;
+         margin-bottom: 10px;
+         transition: 0.3s ease;
+      }
+      .add-tocart:hover{
+         width: 100%;
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: black;
+         color: #fff;
+         text-decoration: none;
+         border-radius: 0px;
+         border: none;
+         cursor: pointer;
+         text-align: center;
+      }
+
+      .view-product{
+         width: 100%;
+         display: inline-block;
+         padding: 10px 20px;
+         background-color:transparent;
+         color: black;
+         text-decoration:underline;
+         border-radius: 0px;
+         border: none;
+         cursor: pointer;
+         text-align: center;
+
+      }
+
+
+      .view-product:hover{
+         width: 100%;
+         display: inline-block;
+         padding: 10px 20px;
+         background-color:transparent;
+         color: black;
+         text-decoration:none;
+         border-radius: 0px;
+         border: none;
+         cursor: pointer;
+         text-align: center;
+      }
+
+
+
+
+   }
+
+}
+
+
+
+
+
+
+
+
+/* start body */
+
+
+
+
+
+/* footer*/
+.footer {
+   background: rgb(238, 224, 208);
+   ;
+   font-family: 'Play', sans-serif;
+   text-align: center;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+
+
+   .footer-icon {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 0 30px;
+   }
+
+
+   .facebook {
+       border-radius: 100%;
+       font-size: 2rem;
+       background-color: white;
+       transition: 0.5s ease;
+
+   }
+
+   .facebook:hover {
+       color: #415ca0;
+
+   }
+
+   .instagram {
+       font-size: 2rem;
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+       color: #fff;
+       margin: 10px;
+       border-radius: 50%;
+   }
+
+   .instagram:hover {
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+       background-clip: text;
+       border-radius: 20%;
+       // transform: scale(1.5);
+       color: transparent;
+   }
+
+   .twiter {
+       border-radius: 50%;
+       font-size: 2rem;
+       background-color: white;
+       transition: 0.5s ease;
+   }
+
+   .twiter:hover {
+       background-color: #249ef0;
+       color: white;
+
+   }
+
+
+
+}
+ 
 
 

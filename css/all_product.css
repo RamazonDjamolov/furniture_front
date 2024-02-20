@@ -8,6 +8,10 @@
   outline: none;
 }
 
+del {
+  text-decoration: line-through;
+}
+
 /* navbar top */
 .navbar-top {
   width: 100%;
@@ -23,7 +27,7 @@
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   color: #fff;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 7px;
 }
 .social-link > a .instagram:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -142,4 +146,155 @@
 .container {
   overflow: hidden;
   overflow-x: auto !important;
+}
+
+.block-main {
+  display: flex;
+}
+.block-main .filter-left {
+  width: 25%;
+  background-color: #d6249f;
+}
+/* start body */
+.main-cart {
+  border-radius: 7px;
+  width: 18rem;
+  height: 350px;
+  border: none;
+  padding: 10px;
+  transition: transform 0.5s ease;
+}
+.main-cart .img-cart {
+  width: 100%;
+}
+.main-cart .img-cart img {
+  width: 100%;
+}
+.main-cart .price {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.main-cart .price p {
+  color: red;
+}
+.main-cart .price del {
+  color: rgb(122, 122, 122);
+}
+.main-cart .price i {
+  color: green;
+}
+.main-cart .form {
+  display: none;
+}
+
+.main-cart:hover {
+  transform: scale(1.1);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.main-cart:hover .form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main-cart:hover .form .add-tocart {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+.main-cart:hover .form .add-tocart:hover {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.main-cart:hover .form .view-product {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  text-decoration: underline;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.main-cart:hover .form .view-product:hover {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* start body */
+/* footer*/
+.footer {
+  background: rgb(238, 224, 208);
+  font-family: "Play", sans-serif;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 30px;
+}
+.footer .facebook {
+  border-radius: 100%;
+  font-size: 2rem;
+  background-color: white;
+  transition: 0.5s ease;
+}
+.footer .facebook:hover {
+  color: #415ca0;
+}
+.footer .instagram {
+  font-size: 2rem;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+.footer .instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  border-radius: 20%;
+  color: transparent;
+}
+.footer .twiter {
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: white;
+  transition: 0.5s ease;
+}
+.footer .twiter:hover {
+  background-color: #249ef0;
+  color: white;
 }/*# sourceMappingURL=all_product.css.map */
